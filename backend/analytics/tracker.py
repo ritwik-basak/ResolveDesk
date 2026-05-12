@@ -24,7 +24,7 @@ supabase: Client = create_client(_supabase_url, _supabase_key)
 
 def _get_pg_connection():
     """Raw psycopg connection — only used for CREATE TABLE in create_tables()."""
-    return psycopg.connect(_db_url, prepare_threshold=0)
+    return psycopg.connect(_db_url, prepare_threshold=None)
 
 
 # =============================================================================

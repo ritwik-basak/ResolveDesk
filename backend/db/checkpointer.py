@@ -49,7 +49,7 @@ async def get_checkpointer():
         max_size=10,
         kwargs={
             "autocommit":        True,
-            "prepare_threshold": 0,
+            "prepare_threshold": None,
         },
     ) as pool:
         checkpointer = AsyncPostgresSaver(pool)
