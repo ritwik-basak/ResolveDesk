@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    { "source": "/chat",           "destination": "https://resolvedesk-backend-676292824529.us-central1.run.app/chat" },
+    { "source": "/feedback",       "destination": "https://resolvedesk-backend-676292824529.us-central1.run.app/feedback" },
+    { "source": "/metrics/:path*", "destination": "https://resolvedesk-backend-676292824529.us-central1.run.app/metrics/:path*" },
+    { "source": "/analytics/:path*","destination": "https://resolvedesk-backend-676292824529.us-central1.run.app/analytics/:path*" },
+    { "source": "/ingest/:path*",  "destination": "https://resolvedesk-backend-676292824529.us-central1.run.app/ingest/:path*" },
+    { "source": "/session/:path*", "destination": "https://resolvedesk-backend-676292824529.us-central1.run.app/session/:path*" },
+    { "source": "/health",         "destination": "https://resolvedesk-backend-676292824529.us-central1.run.app/health" },
+    { "source": "/(.*)",           "destination": "/index.html" }
+  ]
+}
