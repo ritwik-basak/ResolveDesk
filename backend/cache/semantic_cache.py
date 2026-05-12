@@ -6,7 +6,8 @@ import uuid
 import numpy as np
 import redis
 from dotenv import load_dotenv
-from sentence_transformers import SentenceTransformer
+
+from backend.models import embed_model as _embed_model
 
 load_dotenv()
 
@@ -16,7 +17,6 @@ load_dotenv()
 
 SIMILARITY_THRESHOLD = 0.85
 TTL_SECONDS          = 2_592_000     # 30 days
-EMBED_MODEL          = "BAAI/bge-m3"
 
 EMBEDDINGS_KEY = "cache:embeddings"
 ANSWERS_KEY    = "cache:answers"
@@ -25,12 +25,11 @@ ANSWERS_KEY    = "cache:answers"
 # SINGLETONS — load once, reuse across all requests
 # =============================================================================
 
-_model = SentenceTransformer(EMBED_MODEL)
-
 _redis = redis.Redis(
     host     = os.getenv("REDIS_HOST", "localhost"),
     port     = int(os.getenv("REDIS_PORT", 6379)),
     password = os.getenv("REDIS_PASSWORD", None),
+    ssl      = os.getenv("REDIS_SSL", "false").lower() == "true",
     decode_responses = True,       # always return str, not bytes
 )
 
@@ -40,8 +39,8 @@ _redis = redis.Redis(
 # =============================================================================
 
 def _embed(text: str) -> np.ndarray:
-    """Encode a single string into a BGE-M3 vector (1024-dim, L2-normalised)."""
-    return _model.encode(text, normalize_embeddings=True)
+    """Encode a single string using the shared BGE-base model (768-dim)."""
+    return np.array(_embed_model.get_text_embedding(text), dtype=np.float32)
 
 
 def _cosine_similarity(a: np.ndarray, b: np.ndarray) -> float:
@@ -79,6 +78,8 @@ def get_cached_answer(query: str) -> dict | None:
         if score > best_score:
             best_score = score
             best_id    = entry_id
+
+    print(f"[SemanticCache] query='{query}' | best_score={best_score:.4f} | threshold={SIMILARITY_THRESHOLD} | hit={best_score >= SIMILARITY_THRESHOLD}")
 
     if best_score >= SIMILARITY_THRESHOLD and best_id:
         answer_json = _redis.hget(ANSWERS_KEY, best_id)

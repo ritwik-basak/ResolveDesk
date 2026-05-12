@@ -38,35 +38,35 @@ const ALL_CARDS = [
     key: 'escalation_rate', type: 'circle', label: 'Escalation Rate',
     gradient: ['#f59e0b', '#ef4444'], pctOf: v => (v || 0) * 100,
     sub: 'messages escalated',
-    tooltip: 'escalated_messages ÷ total_messages. A message escalates when agent confidence < 0.75 (Llama-3.3-70B threshold) or query rewriting on retry still fails.',
+    tooltip: 'How often the AI couldn\'t resolve a query and handed it off. Triggers when the agent\'s confidence drops below 75%, or when rephrasing the question still yields a poor RAG knowledge base match.',
   },
   {
     key: 'avg_confidence', type: 'circle', label: 'Avg Confidence',
     gradient: ['#10b981', '#06b6d4'], pctOf: v => (v || 0) * 100,
     sub: 'agent certainty',
-    tooltip: 'Mean of CONFIDENCE scores self-reported by agents. Each agent appends "CONFIDENCE: 0.X" to output; parsed via regex. ≥0.75 = resolved, <0.75 = escalation trigger.',
+    tooltip: 'Average certainty score across all AI responses. Each agent rates its own answer from 0–1. Scores below 0.75 trigger escalation to a human. Higher is better.',
   },
   {
     key: 'est_cost_usd', type: 'flat', label: 'Est. LLM Cost', icon: Cpu,
     gradient: ['#8b5cf6', '#ec4899'], format: v => `$${v.toFixed(4)}`,
-    tooltip: 'Three models: Gemini 2.5 Flash (supervisor, $0.15/1M) + Groq Llama 3.1 8B (chitchat, $0.06/1M) + Groq Llama 3.3 70B (faq/order/returns, $0.70/1M). Formula: 70B×$0.0000007 + 8B×$0.00000006 + Gemini×$0.00000015. Cache hits = $0.',
+    tooltip: 'Estimated API cost across 3 models — Gemini 2.5 Flash ($0.15/1M tokens) for routing, Llama 3.1 8B ($0.06/1M) for chitchat, Llama 3.3 70B ($0.70/1M) for FAQ/orders/returns. Cached responses cost nothing — no model is called.',
   },
   {
-    key: 'avg_response_time_ms', type: 'flat', label: 'Avg Response', icon: Clock,
+    key: 'avg_response_time_ms', type: 'flat', label: 'Avg Latency', icon: Clock,
     gradient: ['#06b6d4', '#10b981'], format: v => `${Math.round(v)}ms`,
-    tooltip: 'Server-side latency measured via time.time() before/after graph.ainvoke(). Excludes SSE streaming time to client. Cache hits log 0ms.',
+    tooltip: 'Server-side AI processing time per message. Measured from request received to pipeline complete — does not include the time taken to stream words to your screen, so actual time-to-screen is higher. Cache hits are near-instant.',
   },
   {
     key: 'retry_rate', type: 'circle', label: 'Retry Rate',
     gradient: ['#f59e0b', '#f97316'], pctOf: v => (v || 0) * 100,
     sub: 'queries rewritten',
-    tooltip: 'retry_attempted=true ÷ total_messages. Fires in the FAQ agent when RAG reranker score < 0.3. LLM rewrites the query once and retries retrieval before escalating.',
+    tooltip: 'How often the AI rephrased a question to get a better result. Triggers in the FAQ agent when the RAG reranker score falls below 0.3 — the AI rewrites the query once and retries RAG retrieval before escalating.',
   },
   {
     key: 'avg_rag_score', type: 'circle', label: 'Avg RAG Score',
     gradient: ['#10b981', '#84cc16'], pctOf: v => (v || 0) * 100,
     sub: 'RAG match quality',
-    tooltip: 'Mean CrossEncoder (ms-marco-MiniLM-L-12-v2) score for the top retrieved chunk. Sigmoid-normalized logit. 0 = no KB match, 1 = exact match. Null for cached/non-FAQ messages.',
+    tooltip: 'Average RAG relevance score of the best knowledge base match, scored by the CrossEncoder reranker (ms-marco-MiniLM-L-12-v2). Reads the query and each retrieved chunk together to judge how well they match. 0 = no match found, 1 = exact match. Only tracked for the FAQ agent, which uses RAG retrieval.',
   },
 ]
 

@@ -49,7 +49,7 @@ export default function Charts({ summary }) {
       <div className="glass" style={{ borderRadius: '1.25rem', padding: '1.25rem' }}>
         <ChartHeader
           label="Intent Breakdown"
-          tooltip="Intents classified by the Supervisor agent (Llama-3.3-70B). Routing: faq → FAQ agent, order/returns → tool-calling agents, chitchat → small talk, escalation → abusive messages only."
+          tooltip="How messages are routed by the Supervisor (Gemini 2.5 Flash) into 5 categories: Chitchat → small talk agent (Llama 3.1 8B), FAQ → knowledge base lookup (Llama 3.3 70B), Order → order tracking tools (Llama 3.3 70B), Returns → return/exchange tools (Llama 3.3 70B), Escalation → abusive or unresolvable queries (Llama 3.3 70B)."
           tooltipWidth={240}
         />
         {intentData.length > 0 ? (
@@ -91,7 +91,7 @@ export default function Charts({ summary }) {
       <div className="glass" style={{ borderRadius: '1.25rem', padding: '1.25rem', display: 'flex', flexDirection: 'column' }}>
         <ChartHeader
           label="Cache Hit Rate"
-          tooltip="Queries served from Redis semantic cache. Threshold: cosine similarity ≥ 0.85 using BGE-base-en-v1.5 embeddings (768-dim). Cache hits skip the LLM entirely — 0 tokens, 0 cost."
+          tooltip="Queries answered instantly from Redis semantic cache without calling any AI model. Uses cosine similarity of BGE-base-en-v1.5 embeddings — a new query must score ≥ 0.85 against a cached one to count as a hit. Cache hits use 0 tokens and cost nothing."
           tooltipWidth={230}
         />
         <div style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
@@ -108,7 +108,7 @@ export default function Charts({ summary }) {
       <div className="glass" style={{ borderRadius: '1.25rem', padding: '1.25rem', display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: '0.85rem' }}>
         <ChartHeader
           label="LLM Usage"
-          tooltip="Three models per message: Gemini 2.5 Flash (supervisor, $0.15/1M) + Groq Llama 3.1 8B (chitchat, $0.06/1M) + Groq Llama 3.3 70B (faq/order/returns, $0.70/1M). Cost = 70B×$0.0000007 + 8B×$0.00000006 + Gemini×$0.00000015."
+          tooltip="Total tokens consumed across all AI models. Each message passes through up to 3 models — Gemini 2.5 Flash ($0.15/1M) for routing, Llama 3.1 8B ($0.06/1M) for chitchat, Llama 3.3 70B ($0.70/1M) for FAQ/orders/returns. Cached responses use 0 tokens."
           tooltipWidth={230}
         />
         <div style={{ textAlign: 'center' }}>

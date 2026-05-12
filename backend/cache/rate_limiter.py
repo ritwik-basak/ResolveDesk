@@ -20,6 +20,7 @@ _redis = redis.Redis(
     host     = os.getenv("REDIS_HOST", "localhost"),
     port     = int(os.getenv("REDIS_PORT", 6379)),
     password = os.getenv("REDIS_PASSWORD", None),
+    ssl      = os.getenv("REDIS_SSL", "false").lower() == "true",
     decode_responses = True,
 )
 

@@ -171,9 +171,9 @@ export default function LiveMetrics() {
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.65rem' }}>
               <Stat icon={Users}         label="Sessions"   rawValue={metrics.total_sessions || 0}         format={v => Math.round(v)}                      color="#6366f1" />
               <Stat icon={MessageSquare} label="Messages"   rawValue={metrics.total_messages || 0}         format={v => Math.round(v)}                      color="#8b5cf6" />
-              <Stat icon={Clock}         label="Avg Time"   rawValue={metrics.avg_response_time_ms || 0}   format={v => v > 0 ? `${Math.round(v)}ms` : '—'} color="#f59e0b" />
+              <Stat icon={Clock}         label="Avg Latency" rawValue={metrics.avg_response_time_ms || 0}   format={v => v > 0 ? `${Math.round(v)}ms` : '—'} color="#f59e0b" />
               <Stat icon={Zap}           label="Retry Rate" rawValue={(metrics.retry_rate || 0) * 100}     format={v => `${Math.round(v)}%`}                color="#f97316"
-                tooltip="% of messages where query rewriting fired. Triggers in the FAQ agent when RAG reranker score < 0.3 — LLM rewrites the query once and retries before escalating."
+                tooltip="How often the AI rephrased a question to get a better result. Triggers in the FAQ agent when the RAG reranker score falls below 0.3 — the AI rewrites the query once and retries RAG retrieval before escalating."
               />
             </div>
 

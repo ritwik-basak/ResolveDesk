@@ -1,0 +1,50 @@
+# Secrets — never bake these into the image
+.env
+.env.*
+
+# Local Python environment — packages are installed inside Docker via requirements.txt
+venv/
+env/
+.venv/
+
+# Python bytecode — auto-generated, not needed in the image
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyc
+*.pkl
+
+# Frontend — deployed separately to Vercel, not part of the backend image
+frontend/
+
+# Development and documentation files
+PLAN.md
+README.md
+test.py
+
+# Knowledge base markdown files — already ingested into Pinecone and Supabase
+backend/rag/knowledge_base/
+
+# Local HuggingFace model cache — models are downloaded fresh inside the image build
+.cache/
+
+# CI/CD config — not needed inside the running container
+.github/
+
+# Version control
+.git
+.gitignore
+
+# Editor artifacts
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/

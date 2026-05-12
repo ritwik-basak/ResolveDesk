@@ -1,23 +1,6 @@
 import { AreaChart, Area, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid } from 'recharts'
 import InfoTooltip from './InfoTooltip'
 
-// DEMO DATA — remove the `useMock` condition below to go back to real data
-const MOCK_TREND = [
-  { date: '2025-04-28', messages: 4,  escalated: 0 },
-  { date: '2025-04-29', messages: 9,  escalated: 2 },
-  { date: '2025-04-30', messages: 6,  escalated: 1 },
-  { date: '2025-05-01', messages: 14, escalated: 3 },
-  { date: '2025-05-02', messages: 11, escalated: 1 },
-  { date: '2025-05-03', messages: 5,  escalated: 0 },
-  { date: '2025-05-04', messages: 19, escalated: 4 },
-  { date: '2025-05-05', messages: 13, escalated: 2 },
-  { date: '2025-05-06', messages: 8,  escalated: 1 },
-  { date: '2025-05-07', messages: 23, escalated: 5 },
-  { date: '2025-05-08', messages: 17, escalated: 2 },
-  { date: '2025-05-09', messages: 12, escalated: 1 },
-  { date: '2025-05-10', messages: 20, escalated: 3 },
-  { date: '2025-05-11', messages: 16, escalated: 3 },
-]
 
 const HoverTooltip = ({ active, payload, label }) => {
   if (!active || !payload?.length) return null
@@ -48,24 +31,20 @@ const HoverTooltip = ({ active, payload, label }) => {
 export default function TrendChart({ trend }) {
   if (!trend) return null
 
-  const useMock = trend.length <= 1   // ← remove this line + replace displayTrend with trend to go live
-
-  const displayTrend = useMock ? MOCK_TREND : trend
-
   const fmtDate = d => {
     const parts = d.split('-')
     return `${parseInt(parts[1])}/${parseInt(parts[2])}`
   }
 
-  const data = displayTrend.map(t => ({
+  const data = trend.map(t => ({
     date:      fmtDate(t.date),
     Messages:  t.messages,
     Escalated: t.escalated || 0,
   }))
 
-  const totalMessages  = useMock ? '—' : data.reduce((s, d) => s + d.Messages, 0)
-  const totalEscalated = useMock ? '—' : data.reduce((s, d) => s + d.Escalated, 0)
-  const escRate        = (!useMock && +totalMessages > 0) ? Math.round((+totalEscalated / +totalMessages) * 100) : 0
+  const totalMessages  = data.reduce((s, d) => s + d.Messages, 0)
+  const totalEscalated = data.reduce((s, d) => s + d.Escalated, 0)
+  const escRate        = totalMessages > 0 ? Math.round((totalEscalated / totalMessages) * 100) : 0
 
   return (
     <div className="glass" style={{ borderRadius: '1.25rem', padding: '1.5rem 1.5rem 1.25rem', marginBottom: '0.75rem' }}>
@@ -76,18 +55,8 @@ export default function TrendChart({ trend }) {
           <span style={{ fontSize: '0.85rem', fontWeight: 700, color: '#1e293b', letterSpacing: '-0.01em' }}>
             Message Volume
           </span>
-          {useMock && (
-            <span style={{
-              fontSize: '0.65rem', fontWeight: 700, letterSpacing: '0.06em',
-              padding: '2px 8px', borderRadius: 99,
-              background: 'rgba(245,158,11,0.12)', color: '#d97706',
-              border: '1px solid rgba(245,158,11,0.3)', textTransform: 'uppercase',
-            }}>
-              Demo data
-            </span>
-          )}
-          <InfoTooltip
-            text="Daily message volume (total) vs escalations over last 30 days. Shaded areas show relative proportions. Grouped from messages.timestamp column (UTC)."
+<InfoTooltip
+            text="Daily message count vs escalations over the last 30 days. A wide gap between the two lines means the AI is resolving most queries without human handoff."
             width={255}
           />
         </div>

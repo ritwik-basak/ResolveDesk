@@ -1,0 +1,159 @@
+# =============================================================================
+# ResolveDesk — Backend CI/CD
+#
+# Triggers on every push to main that touches backend code, requirements.txt,
+# or the Dockerfile. Builds a Docker image, pushes it to Google Artifact
+# Registry, and deploys a new Cloud Run revision.
+#
+# ── One-time GCP setup (do this once in GCP Console / gcloud CLI) ──────────
+#
+#   1. Create a GCP project and note the Project ID.
+#
+#   2. Enable these APIs:
+#        gcloud services enable \
+#          run.googleapis.com \
+#          artifactregistry.googleapis.com \
+#          cloudscheduler.googleapis.com \
+#          secretmanager.googleapis.com
+#
+#   3. Create the Artifact Registry repository:
+#        gcloud artifacts repositories create resolvedesk \
+#          --repository-format=docker \
+#          --location=us-central1
+#
+#   4. Create a service account for GitHub Actions:
+#        gcloud iam service-accounts create github-actions \
+#          --display-name="GitHub Actions"
+#
+#   5. Grant it the necessary roles:
+#        PROJECT=your-project-id
+#        SA=github-actions@${PROJECT}.iam.gserviceaccount.com
+#
+#        gcloud projects add-iam-policy-binding $PROJECT \
+#          --member="serviceAccount:$SA" --role="roles/run.admin"
+#        gcloud projects add-iam-policy-binding $PROJECT \
+#          --member="serviceAccount:$SA" --role="roles/artifactregistry.writer"
+#        gcloud projects add-iam-policy-binding $PROJECT \
+#          --member="serviceAccount:$SA" --role="roles/iam.serviceAccountUser"
+#
+#   6. Create and download a JSON key for the service account:
+#        gcloud iam service-accounts keys create key.json \
+#          --iam-account=$SA
+#
+#   7. Grant the Cloud Run service account access to GCS:
+#        # The default compute service account is used by Cloud Run
+#        gcloud projects add-iam-policy-binding $PROJECT \
+#          --member="serviceAccount:$(gcloud iam service-accounts list \
+#            --filter='email~compute@' --format='value(email)')" \
+#          --role="roles/storage.objectAdmin"
+#
+#   8. Set up a Cloud Scheduler job to keep the instance warm (free):
+#        gcloud scheduler jobs create http resolvedesk-warmup \
+#          --location=us-central1 \
+#          --schedule="*/10 * * * *" \
+#          --uri="https://YOUR_CLOUD_RUN_URL/health" \
+#          --http-method=GET
+#      (Replace YOUR_CLOUD_RUN_URL after first deploy.)
+#
+# ── GitHub Secrets to add (Settings → Secrets → Actions) ──────────────────
+#
+#   GCP_PROJECT_ID      Your GCP project ID
+#   GCP_SA_KEY          Contents of key.json (the entire JSON, not the path)
+#
+#   SUPABASE_URL        From Supabase project settings → API
+#   SUPABASE_KEY        Service role key from Supabase
+#   SUPABASE_DB_URL     Direct PostgreSQL URL (Session mode, port 5432)
+#                       Format: postgresql://postgres:[password]@[host]:5432/postgres
+#
+#   PINECONE_API_KEY    From Pinecone console
+#   PINECONE_INDEX_NAME resolvedesk-knowledge
+#
+#   GROQ_API_KEY        From Groq console
+#   GOOGLE_API_KEY      Gemini API key from Google AI Studio
+#
+#   LANGCHAIN_API_KEY   From LangSmith
+#   LANGCHAIN_PROJECT   Your LangSmith project name
+#
+#   GCS_BUCKET_NAME     Name of your GCS bucket (e.g. resolvedesk-documents)
+#
+#   REDIS_HOST          Upstash Redis endpoint (from upstash.com console)
+#   REDIS_PASSWORD      Upstash Redis password/token
+# =============================================================================
+
+name: Deploy Backend to Cloud Run
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "backend/**"
+      - "requirements.txt"
+      - "Dockerfile"
+
+env:
+  REGION: us-central1
+  REPO: resolvedesk
+  SERVICE: resolvedesk-backend
+
+jobs:
+  deploy:
+    name: Build and Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v2
+        with:
+          credentials_json: ${{ secrets.GCP_SA_KEY }}
+
+      - name: Set up Cloud SDK
+        uses: google-github-actions/setup-gcloud@v2
+
+      - name: Configure Docker for Artifact Registry
+        run: gcloud auth configure-docker ${{ env.REGION }}-docker.pkg.dev --quiet
+
+      - name: Build Docker image
+        run: |
+          IMAGE=${{ env.REGION }}-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/${{ env.REPO }}/${{ env.SERVICE }}
+          docker build \
+            -t ${IMAGE}:${{ github.sha }} \
+            -t ${IMAGE}:latest \
+            .
+
+      - name: Push Docker image
+        run: |
+          IMAGE=${{ env.REGION }}-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/${{ env.REPO }}/${{ env.SERVICE }}
+          docker push ${IMAGE}:${{ github.sha }}
+          docker push ${IMAGE}:latest
+
+      - name: Deploy to Cloud Run
+        run: |
+          IMAGE=${{ env.REGION }}-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/${{ env.REPO }}/${{ env.SERVICE }}:${{ github.sha }}
+          gcloud run deploy ${{ env.SERVICE }} \
+            --image ${IMAGE} \
+            --region ${{ env.REGION }} \
+            --platform managed \
+            --allow-unauthenticated \
+            --memory 2Gi \
+            --cpu 1 \
+            --timeout 60 \
+            --concurrency 10 \
+            --max-instances 3 \
+            --cpu-boost \
+            --set-env-vars "REDIS_SSL=true,REDIS_PORT=6379,LANGCHAIN_TRACING_V2=true,SUPABASE_URL=$SUPABASE_URL,SUPABASE_KEY=$SUPABASE_KEY,SUPABASE_DB_URL=$SUPABASE_DB_URL,PINECONE_API_KEY=$PINECONE_API_KEY,PINECONE_INDEX_NAME=$PINECONE_INDEX_NAME,GROQ_API_KEY=$GROQ_API_KEY,GOOGLE_API_KEY=$GOOGLE_API_KEY,LANGCHAIN_API_KEY=$LANGCHAIN_API_KEY,LANGCHAIN_PROJECT=$LANGCHAIN_PROJECT,GCS_BUCKET_NAME=$GCS_BUCKET_NAME,REDIS_HOST=$REDIS_HOST,REDIS_PASSWORD=$REDIS_PASSWORD"
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+          PINECONE_API_KEY: ${{ secrets.PINECONE_API_KEY }}
+          PINECONE_INDEX_NAME: ${{ secrets.PINECONE_INDEX_NAME }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+          LANGCHAIN_API_KEY: ${{ secrets.LANGCHAIN_API_KEY }}
+          LANGCHAIN_PROJECT: ${{ secrets.LANGCHAIN_PROJECT }}
+          GCS_BUCKET_NAME: ${{ secrets.GCS_BUCKET_NAME }}
+          REDIS_HOST: ${{ secrets.REDIS_HOST }}
+          REDIS_PASSWORD: ${{ secrets.REDIS_PASSWORD }}
