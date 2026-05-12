@@ -1,0 +1,709 @@
+[
+  {
+    "id": "account_faq_chunk_0",
+    "source": "account_faq",
+    "text": "# CartFlow — Account FAQ\n\n## How do I create a CartFlow account?\n\nYou can sign up on CartFlow in two ways:\n\n**Mobile number (recommended):**\n1. Go to cartflow.in or open the CartFlow app\n2. Click **Sign Up**\n3. Enter your mobile number — an OTP is sent via SMS\n4. Verify the OTP and set your name and email address\n5. Your account is ready",
+    "chunk_index": 0,
+    "category": "faq"
+  },
+  {
+    "id": "account_faq_chunk_1",
+    "source": "account_faq",
+    "text": "**Google or Apple sign-in:**\n- Click **Continue with Google** or **Continue with Apple** — no password needed\n- Your Google/Apple account details are used to create your CartFlow profile\n\n---\n\n## How do I reset my password?\n\n1. Go to the CartFlow login page\n2. Click **Forgot Password**\n3. Enter your registered email address or mobile number\n4. You will receive a reset link via email or OTP via SMS\n5. Follow the link / enter OTP to set a new password",
+    "chunk_index": 1,
+    "category": "faq"
+  },
+  {
+    "id": "account_faq_chunk_2",
+    "source": "account_faq",
+    "text": "If you signed up via Google or Apple, you do not have a CartFlow password — use the same Google/Apple sign-in method.\n\n---\n\n## How do I update my phone number or email?\n\n**To change phone number:**\n1. Go to **My Account > Profile > Edit**\n2. Click **Change Mobile Number**\n3. Enter the new number — OTP verification required for both old and new numbers",
+    "chunk_index": 2,
+    "category": "faq"
+  },
+  {
+    "id": "account_faq_chunk_3",
+    "source": "account_faq",
+    "text": "**To change email:**\n1. Go to **My Account > Profile > Edit**\n2. Click **Change Email**\n3. Enter the new email address\n4. A verification link is sent to the new email — click it to confirm\n\nNote: You cannot change the phone number or email to one already registered with another CartFlow account.\n\n---\n\n## How do I add or manage saved addresses?",
+    "chunk_index": 3,
+    "category": "faq"
+  },
+  {
+    "id": "account_faq_chunk_4",
+    "source": "account_faq",
+    "text": "---\n\n## How do I add or manage saved addresses?\n\n1. Go to **My Account > Saved Addresses**\n2. Click **Add New Address**\n3. Fill in: full name, flat/house/building, street/area, city, state, and PIN code\n4. Mark one address as **Default** — it will be pre-selected at every checkout\n\nYou can save up to **5 addresses** on your account. To edit or delete an address, click the three-dot menu next to it.\n\n---\n\n## What is the CartFlow Loyalty Programme?",
+    "chunk_index": 4,
+    "category": "faq"
+  },
+  {
+    "id": "account_faq_chunk_5",
+    "source": "account_faq",
+    "text": "---\n\n## What is the CartFlow Loyalty Programme?\n\nCartFlow Rewards is our loyalty programme:\n- Earn **1 point for every ₹10 spent**\n- Points credited within 24 hours of order delivery\n- Redeem points at checkout: **100 points = ₹10 discount**\n- Points expire after 12 months of inactivity\n\nYou can check your point balance in **My Account > CartFlow Rewards**.\n\n---\n\n## How do I view my order history?",
+    "chunk_index": 5,
+    "category": "faq"
+  },
+  {
+    "id": "account_faq_chunk_6",
+    "source": "account_faq",
+    "text": "---\n\n## How do I view my order history?\n\nGo to **My Account > My Orders**. All orders — current, delivered, cancelled, and returned — are listed here with:\n- Order ID, date, and amount\n- Current status and tracking link\n- Option to raise return/exchange requests\n- Invoice download link\n\n---\n\n## How do I delete my CartFlow account?\n\nAccount deletion is permanent. All your order history, saved addresses, and CartFlow Wallet balance will be erased.",
+    "chunk_index": 6,
+    "category": "faq"
+  },
+  {
+    "id": "account_faq_chunk_7",
+    "source": "account_faq",
+    "text": "To delete your account:\n1. Go to **My Account > Settings > Privacy**\n2. Click **Delete My Account**\n3. Read the consequences and confirm with your password or OTP\n4. Your account enters a 30-day deactivation period — you can reactivate by logging in\n5. After 30 days, your data is permanently deleted per our Privacy Policy\n\nIf you have an active order, open return, or wallet balance, you cannot delete the account until those are resolved.\n\n---",
+    "chunk_index": 7,
+    "category": "faq"
+  },
+  {
+    "id": "account_faq_chunk_8",
+    "source": "account_faq",
+    "text": "---\n\n## I cannot log in to my account. What should I do?",
+    "chunk_index": 8,
+    "category": "faq"
+  },
+  {
+    "id": "account_faq_chunk_9",
+    "source": "account_faq",
+    "text": "Common causes and fixes:\n- **Wrong password** → Use **Forgot Password** to reset\n- **OTP not received** → Check network signal; try resending after 60 seconds; check if the number is registered with CartFlow\n- **Account temporarily locked** → After 5 failed login attempts, the account is locked for 30 minutes for security\n- **Number not registered** → You may have signed up with a different number or email — try the other",
+    "chunk_index": 9,
+    "category": "faq"
+  },
+  {
+    "id": "account_faq_chunk_10",
+    "source": "account_faq",
+    "text": "- **Google/Apple sign-in** → If you used social login, use the same method instead of password login",
+    "chunk_index": 10,
+    "category": "faq"
+  },
+  {
+    "id": "account_faq_chunk_11",
+    "source": "account_faq",
+    "text": "For persistent issues, contact CartFlow support with your registered email address or phone number.\n\n---\n\n## How do I add family members to my account?\n\nCartFlow supports **Family Sharing**:\n1. Go to **My Account > Family Sharing**\n2. Invite up to 4 family members via their mobile number\n3. Each member has their own login but orders are grouped under the primary account\n4. The primary account holder can see all family orders and manage addresses",
+    "chunk_index": 11,
+    "category": "faq"
+  },
+  {
+    "id": "account_faq_chunk_12",
+    "source": "account_faq",
+    "text": "Family members do not share wallet balance or rewards points — each has their own.\n\n---\n\n## Is my personal data safe with CartFlow?\n\nCartFlow follows all guidelines under India's **Digital Personal Data Protection Act (DPDP Act)**. Your data is:\n- Never sold to third parties\n- Used only for order fulfilment, personalisation, and communication\n- Stored on servers in India\n- Accessible by you at any time via **My Account > Download My Data**",
+    "chunk_index": 12,
+    "category": "faq"
+  },
+  {
+    "id": "account_faq_chunk_13",
+    "source": "account_faq",
+    "text": "For privacy-related queries or data deletion requests, email privacy@cartflow.in.",
+    "chunk_index": 13,
+    "category": "faq"
+  },
+  {
+    "id": "cancellation_policy_chunk_0",
+    "source": "cancellation_policy",
+    "text": "# CartFlow — Cancellation Policy\n\n## Overview\n\nYou can cancel an order on CartFlow at any time before it is dispatched from our warehouse. Once dispatched, cancellation is no longer possible — but you can refuse delivery or initiate a return after it arrives.\n\n---\n\n## How to Cancel an Order",
+    "chunk_index": 0,
+    "category": "policy"
+  },
+  {
+    "id": "cancellation_policy_chunk_1",
+    "source": "cancellation_policy",
+    "text": "---\n\n## How to Cancel an Order\n\n1. Go to **My Orders** in the CartFlow app or website\n2. Select the order you want to cancel\n3. Click **Cancel Order**\n4. Choose a cancellation reason from the dropdown\n5. Confirm — the cancellation is immediate if the order has not been dispatched\n\nYou will receive an SMS and email confirmation of the cancellation within a few minutes.\n\n---\n\n## Cancellation Window",
+    "chunk_index": 1,
+    "category": "policy"
+  },
+  {
+    "id": "cancellation_policy_chunk_2",
+    "source": "cancellation_policy",
+    "text": "---\n\n## Cancellation Window\n\n| Order Status | Can Cancel? |\n|---|---|\n| Order Placed (Payment Pending) | Yes — immediately |\n| Order Confirmed (Payment Received) | Yes — up to dispatch |\n| Preparing for Dispatch | Yes — but may not process before dispatch |\n| Dispatched / Shipped | No — refuse delivery or return after receipt |\n| Out for Delivery | No — refuse delivery at doorstep |\n| Delivered | No — initiate return within return window |",
+    "chunk_index": 2,
+    "category": "policy"
+  },
+  {
+    "id": "cancellation_policy_chunk_3",
+    "source": "cancellation_policy",
+    "text": "**\"Preparing for Dispatch\"** is a brief window where we cannot guarantee cancellation. If your cancellation request is received but the order is already dispatched, a full refund is still issued after the item is returned to our warehouse.\n\n---\n\n## Refund After Cancellation",
+    "chunk_index": 3,
+    "category": "policy"
+  },
+  {
+    "id": "cancellation_policy_chunk_4",
+    "source": "cancellation_policy",
+    "text": "---\n\n## Refund After Cancellation\n\n| Payment Method | Refund Timeline After Cancellation |\n|---|---|\n| UPI (GPay, PhonePe, Paytm UPI) | 1–3 business days |\n| Debit card | 3–5 business days |\n| Credit card | 5–7 business days |\n| CartFlow Wallet | Instant |\n| Cash on Delivery | No charge collected — nothing to refund |\n\nFor COD orders cancelled before delivery, no charge is collected. For COD orders where you refused delivery, the return shipping is handled by CartFlow at no cost to you.\n\n---",
+    "chunk_index": 4,
+    "category": "policy"
+  },
+  {
+    "id": "cancellation_policy_chunk_5",
+    "source": "cancellation_policy",
+    "text": "---\n\n## Cancelling Part of an Order\n\nIf your order contains multiple items, you can cancel individual items:\n1. Go to **My Orders > Select Order**\n2. Click **Cancel** next to the specific item (not the whole order)\n3. The remaining items will continue to be processed and delivered\n\nRefund is calculated proportionally based on the cancelled item's price.\n\n---\n\n## Can a Seller Cancel My Order?",
+    "chunk_index": 5,
+    "category": "policy"
+  },
+  {
+    "id": "cancellation_policy_chunk_6",
+    "source": "cancellation_policy",
+    "text": "---\n\n## Can a Seller Cancel My Order?\n\nIn rare cases, a seller may cancel an order if:\n- The product goes out of stock after your order was placed\n- A pricing error was detected\n- The item cannot be dispatched to your pin code\n\nIf a seller cancels your order, you will receive:\n- An immediate notification with the reason\n- A full refund to your original payment method\n- An option to find an alternative product",
+    "chunk_index": 6,
+    "category": "policy"
+  },
+  {
+    "id": "cancellation_policy_chunk_7",
+    "source": "cancellation_policy",
+    "text": "CartFlow takes seller cancellations seriously. Sellers with high cancellation rates are penalised and may be removed from the platform.\n\n---\n\n## What if I Want to Change My Order Instead of Cancelling?",
+    "chunk_index": 7,
+    "category": "policy"
+  },
+  {
+    "id": "cancellation_policy_chunk_8",
+    "source": "cancellation_policy",
+    "text": "---\n\n## What if I Want to Change My Order Instead of Cancelling?\n\nCartFlow does not support order modifications after placement. If you want to:\n- **Change colour/size** → Cancel the current order and place a new one\n- **Add items** → Place a separate new order\n- **Change address** → Contact support immediately (only possible before dispatch)\n- **Change payment method** → Not possible after payment is completed\n\n---\n\n## Cancellation During Sale Events",
+    "chunk_index": 8,
+    "category": "policy"
+  },
+  {
+    "id": "cancellation_policy_chunk_9",
+    "source": "cancellation_policy",
+    "text": "---\n\n## Cancellation During Sale Events\n\nDuring major sale events (Big Billion Days, Great Indian Festival), order processing is accelerated. Your order may move to \"Dispatched\" status faster than usual, reducing the cancellation window. We recommend reviewing your cart carefully before placing an order during sales.\n\n---\n\n## Frequently Asked Questions",
+    "chunk_index": 9,
+    "category": "policy"
+  },
+  {
+    "id": "cancellation_policy_chunk_10",
+    "source": "cancellation_policy",
+    "text": "---\n\n## Frequently Asked Questions\n\n**I tried to cancel but the button is greyed out. Why?**\nThis means your order has already been dispatched. You can refuse the delivery when the agent arrives, or return it after delivery.\n\n**I cancelled but haven't received my refund yet.**\nCheck **My Orders > View Refund Status**. The refund timeline starts from the cancellation confirmation, not the date you initiated it. UPI refunds typically arrive within 1–3 business days.",
+    "chunk_index": 10,
+    "category": "policy"
+  },
+  {
+    "id": "cancellation_policy_chunk_11",
+    "source": "cancellation_policy",
+    "text": "**My order is showing \"Cancelled\" but I did not cancel it.**\nThis could be a seller cancellation (stock issue or pricing error). Check your email for a cancellation notification from CartFlow. A full refund will be processed automatically.\n\n**Can I cancel after refusing delivery?**\nIf you refused delivery, the package is returned to our warehouse. Once it arrives, your refund is processed automatically — no further action needed from your side.",
+    "chunk_index": 11,
+    "category": "policy"
+  },
+  {
+    "id": "contact_support_chunk_0",
+    "source": "contact_support",
+    "text": "# CartFlow — Contact Support\n\n## Overview\n\nCartFlow's customer support team is available to help you with orders, returns, refunds, payments, account issues, and any other concerns. We offer multiple ways to reach us — choose whichever is most convenient.\n\n---\n\n## Support Channels\n\n### 1. Live Chat (Fastest)\nAvailable 24/7 in the CartFlow app and website.",
+    "chunk_index": 0,
+    "category": "support"
+  },
+  {
+    "id": "contact_support_chunk_1",
+    "source": "contact_support",
+    "text": "## Support Channels\n\n### 1. Live Chat (Fastest)\nAvailable 24/7 in the CartFlow app and website.\n\n- Open the CartFlow app → tap the **Help** icon (bottom navigation)\n- Or go to cartflow.in → click **Help & Support** → **Chat with Us**\n- Average wait time: under 2 minutes\n- Best for: order tracking, return requests, payment issues\n\n### 2. Phone Support\n**Toll-Free: 1800-XXX-XXXX**\nAvailable: Monday to Saturday, 9:00 AM to 9:00 PM IST\nSunday: 10:00 AM to 6:00 PM IST",
+    "chunk_index": 1,
+    "category": "support"
+  },
+  {
+    "id": "contact_support_chunk_2",
+    "source": "contact_support",
+    "text": "- Best for: urgent issues, complex problems requiring detailed explanation\n- Language support: Hindi, English, Tamil, Telugu, Kannada, Marathi, Bengali, Gujarati\n\n### 3. Email Support\n**support@cartflow.in**\nResponse time: Within 24 hours (business days)\nBest for: complaints requiring documentation, legal queries, account deletion requests",
+    "chunk_index": 2,
+    "category": "support"
+  },
+  {
+    "id": "contact_support_chunk_3",
+    "source": "contact_support",
+    "text": "### 4. CartFlow Help Centre\nVisit: help.cartflow.in\n- Browse 500+ self-help articles\n- Searchable by topic (returns, payments, shipping, etc.)\n- No login required\n\n---\n\n## Self-Service (Resolve Without Calling)\n\nMany issues can be resolved instantly through **My Orders** without contacting support:",
+    "chunk_index": 3,
+    "category": "support"
+  },
+  {
+    "id": "contact_support_chunk_4",
+    "source": "contact_support",
+    "text": "| Issue | Self-Service Action |\n|---|---|\n| Track my order | My Orders → Track Shipment |\n| Cancel my order | My Orders → Cancel Order |\n| Raise a return | My Orders → Return / Exchange |\n| Check refund status | My Orders → View Refund Status |\n| Download invoice | My Orders → View Invoice |\n| Report wrong item | My Orders → Report a Problem |\n| Update delivery address | My Orders → Edit Address (before dispatch only) |\n\n---\n\n## Escalation — When to Ask for a Senior Agent",
+    "chunk_index": 4,
+    "category": "support"
+  },
+  {
+    "id": "contact_support_chunk_5",
+    "source": "contact_support",
+    "text": "---\n\n## Escalation — When to Ask for a Senior Agent\n\nIf your issue is not resolved satisfactorily, you can escalate:\n\n**In chat**: Type \"Escalate to supervisor\" or click the **Escalate** button in the chat window\n**By phone**: Say \"I want to speak to a senior agent\" — the agent will transfer you\n**By email**: Reply to any previous support email with \"ESCALATION REQUEST\" in the subject line\n\nEscalations are prioritised and typically resolved within 24–48 hours.\n\n---\n\n## Issue-Specific Contacts",
+    "chunk_index": 5,
+    "category": "support"
+  },
+  {
+    "id": "contact_support_chunk_6",
+    "source": "contact_support",
+    "text": "| Issue Type | Best Channel |\n|---|---|\n| Order not delivered / late delivery | Live chat or phone |\n| Refund not received | Live chat with order ID ready |\n| Wrong / defective product | Live chat + upload photo |\n| Payment failure (money debited, no order) | Live chat with UTR/transaction ID |\n| Account hacked / unauthorised access | Phone (urgent) |\n| Seller misconduct | Email to support@cartflow.in |\n| Brand/product counterfeiting report | Email to trust@cartflow.in |",
+    "chunk_index": 6,
+    "category": "support"
+  },
+  {
+    "id": "contact_support_chunk_7",
+    "source": "contact_support",
+    "text": "| Brand/product counterfeiting report | Email to trust@cartflow.in |\n| Privacy or data deletion request | Email to privacy@cartflow.in |\n| Business / bulk order enquiry | Email to business@cartflow.in |",
+    "chunk_index": 7,
+    "category": "support"
+  },
+  {
+    "id": "contact_support_chunk_8",
+    "source": "contact_support",
+    "text": "---\n\n## Tips for Faster Resolution",
+    "chunk_index": 8,
+    "category": "support"
+  },
+  {
+    "id": "contact_support_chunk_9",
+    "source": "contact_support",
+    "text": "1. **Have your Order ID ready** — It's in your confirmation SMS/email (e.g., ORD-10001)\n2. **Check My Orders first** — Many issues show their status there without needing to contact us\n3. **Be specific** — \"My order ORD-10001 shows delivered but I haven't received it\" is faster to resolve than \"my order is missing\"\n4. **Keep photos handy** — For wrong or damaged item claims, attach a photo from the start",
+    "chunk_index": 9,
+    "category": "support"
+  },
+  {
+    "id": "contact_support_chunk_10",
+    "source": "contact_support",
+    "text": "4. **Keep photos handy** — For wrong or damaged item claims, attach a photo from the start\n5. **Note your case/ticket ID** — Every support interaction generates a ticket ID; use it for follow-ups",
+    "chunk_index": 10,
+    "category": "support"
+  },
+  {
+    "id": "contact_support_chunk_11",
+    "source": "contact_support",
+    "text": "---\n\n## Support During Sale Events\n\nDuring high-traffic sale events (Big Billion Days, Great Indian Festival, Diwali Sale), response times may be slightly longer:\n- Live chat: up to 10 minutes wait\n- Phone: up to 20 minutes wait\n- Email: up to 48 hours\n\nWe recommend using the **self-service options** in My Orders during peak periods for the fastest resolution.\n\n---\n\n## Grievance Officer",
+    "chunk_index": 11,
+    "category": "support"
+  },
+  {
+    "id": "contact_support_chunk_12",
+    "source": "contact_support",
+    "text": "---\n\n## Grievance Officer\n\nAs required under India's Consumer Protection (E-Commerce) Rules, CartFlow has a designated Grievance Officer:\n\n**Name**: [Grievance Officer Name]\n**Email**: grievance@cartflow.in\n**Phone**: Available on the CartFlow website under Legal > Grievance Officer\n**Response Time**: Within 48 hours of receipt",
+    "chunk_index": 12,
+    "category": "support"
+  },
+  {
+    "id": "contact_support_chunk_13",
+    "source": "contact_support",
+    "text": "If your complaint is not resolved within 15 days of contacting our regular support team, you may escalate to the Grievance Officer. Unresolved grievances can also be filed at the **National Consumer Helpline (NCH)**: 1800-11-4000 or consumerhelpline.gov.in.",
+    "chunk_index": 13,
+    "category": "support"
+  },
+  {
+    "id": "payment_faq_chunk_0",
+    "source": "payment_faq",
+    "text": "# CartFlow — Payment FAQ\n\n## What payment methods does CartFlow accept?\n\nCartFlow accepts all major payment methods available in India:",
+    "chunk_index": 0,
+    "category": "faq"
+  },
+  {
+    "id": "payment_faq_chunk_1",
+    "source": "payment_faq",
+    "text": "- **UPI** — Google Pay (GPay), PhonePe, Paytm UPI, BHIM UPI, Amazon Pay UPI\n- **Debit cards** — Rupay, Visa, Mastercard (all Indian banks supported)\n- **Credit cards** — Visa, Mastercard, American Express, Rupay Credit Card (HDFC, ICICI, SBI, Axis, Kotak, and more)\n- **Net banking** — All major Indian banks (SBI, HDFC, ICICI, Axis, PNB, Canara, and 50+ others)\n- **Wallets** — Paytm Wallet, Amazon Pay, Mobikwik, Freecharge\n- **CartFlow Wallet** — Pre-loaded wallet for instant payments",
+    "chunk_index": 1,
+    "category": "faq"
+  },
+  {
+    "id": "payment_faq_chunk_2",
+    "source": "payment_faq",
+    "text": "- **CartFlow Wallet** — Pre-loaded wallet for instant payments\n- **EMI** — No-cost EMI on credit cards and Bajaj Finserv; minimum order ₹3,000\n- **Cash on Delivery (COD)** — Available on eligible orders below ₹10,000",
+    "chunk_index": 2,
+    "category": "faq"
+  },
+  {
+    "id": "payment_faq_chunk_3",
+    "source": "payment_faq",
+    "text": "---\n\n## Is UPI payment safe on CartFlow?\n\nYes. CartFlow's UPI integration is certified by NPCI (National Payments Corporation of India). All UPI transactions are end-to-end encrypted and processed through a PCI-DSS compliant payment gateway. CartFlow never stores your UPI PIN or bank credentials.\n\n---\n\n## Why was my payment declined?",
+    "chunk_index": 3,
+    "category": "faq"
+  },
+  {
+    "id": "payment_faq_chunk_4",
+    "source": "payment_faq",
+    "text": "Common reasons for payment failure:\n- **Insufficient balance** — Check your bank balance or UPI-linked account\n- **Daily transaction limit exceeded** — Most UPI apps have a ₹1 lakh per day limit; credit cards may have per-transaction limits\n- **Bank server downtime** — Try again after 10–15 minutes or use a different payment method\n- **Card not enabled for online transactions** — Enable online/international transactions via your bank's app or net banking",
+    "chunk_index": 4,
+    "category": "faq"
+  },
+  {
+    "id": "payment_faq_chunk_5",
+    "source": "payment_faq",
+    "text": "- **OTP not entered within time** — The OTP expires in 3 minutes; if missed, restart the payment\n- **VPA (UPI ID) incorrect** — Double-check the UPI ID if entering manually",
+    "chunk_index": 5,
+    "category": "faq"
+  },
+  {
+    "id": "payment_faq_chunk_6",
+    "source": "payment_faq",
+    "text": "If your payment fails but money is debited from your account, it will be automatically reversed within **3–5 business days**. If not, contact CartFlow support with your bank transaction reference number.\n\n---\n\n## How does EMI work on CartFlow?\n\nCartFlow offers No-Cost EMI on eligible products (minimum order value ₹3,000):",
+    "chunk_index": 6,
+    "category": "faq"
+  },
+  {
+    "id": "payment_faq_chunk_7",
+    "source": "payment_faq",
+    "text": "CartFlow offers No-Cost EMI on eligible products (minimum order value ₹3,000):\n\n1. At checkout, select **EMI** as the payment method\n2. Choose your bank and tenure (3, 6, 9, or 12 months)\n3. The total amount is divided equally — no extra interest charged to you (CartFlow absorbs the cost)\n4. Your credit card is charged the monthly EMI amount automatically on your billing date\n\nBajaj Finserv EMI Card is also accepted for customers without a credit card. Check eligibility at checkout.\n\n---",
+    "chunk_index": 7,
+    "category": "faq"
+  },
+  {
+    "id": "payment_faq_chunk_8",
+    "source": "payment_faq",
+    "text": "---\n\n## What is CartFlow Wallet?\n\nCartFlow Wallet is a prepaid balance stored in your CartFlow account. You can:\n- Add money using UPI, debit card, or net banking\n- Receive refunds directly into your wallet (instant)\n- Use wallet balance for any CartFlow purchase\n- Wallet balance never expires\n\nMaximum wallet balance: ₹50,000 (as per RBI guidelines)\n\n---\n\n## Is Cash on Delivery available?",
+    "chunk_index": 8,
+    "category": "faq"
+  },
+  {
+    "id": "payment_faq_chunk_9",
+    "source": "payment_faq",
+    "text": "Maximum wallet balance: ₹50,000 (as per RBI guidelines)\n\n---\n\n## Is Cash on Delivery available?\n\nCOD is available for orders below ₹10,000 to most serviceable pin codes. COD may be unavailable for:\n- Remote or rural areas\n- Orders with very high return rates from the delivery address\n- Certain high-value or fragile items\n\nA ₹30 COD handling fee may be applied for orders below ₹499.\n\n---\n\n## I paid but my order was not placed. What do I do?",
+    "chunk_index": 9,
+    "category": "faq"
+  },
+  {
+    "id": "payment_faq_chunk_10",
+    "source": "payment_faq",
+    "text": "This can happen due to a brief timeout between your bank and CartFlow's payment gateway. Follow these steps:\n1. Check **My Orders** — the order may still have been placed successfully\n2. Check your bank account / UPI history to confirm if the amount was debited\n3. If debited but no order in My Orders, the payment will auto-reverse in 3–5 business days\n4. To speed things up, contact CartFlow support with your payment reference number (UTR for UPI, or transaction ID for cards)\n\n---",
+    "chunk_index": 10,
+    "category": "faq"
+  },
+  {
+    "id": "payment_faq_chunk_11",
+    "source": "payment_faq",
+    "text": "---\n\n## Can I pay with multiple payment methods?\n\nYes, partially. You can use **CartFlow Wallet** in combination with any other payment method. For example, if your wallet has ₹200 and your order is ₹1,500, CartFlow Wallet covers ₹200 and you pay ₹1,300 via UPI or card.\n\nCombining two external payment methods (e.g., two different credit cards) is not supported.\n\n---\n\n## How do I get a GST invoice?",
+    "chunk_index": 11,
+    "category": "faq"
+  },
+  {
+    "id": "payment_faq_chunk_12",
+    "source": "payment_faq",
+    "text": "---\n\n## How do I get a GST invoice?\n\nDuring checkout, enter your **GSTIN** (GST Identification Number) in the \"Add GST Details\" section. A GST invoice will be generated and emailed to you within 24 hours of order dispatch. You can also download it from **My Orders > View Invoice**.",
+    "chunk_index": 12,
+    "category": "faq"
+  },
+  {
+    "id": "product_faq_chunk_0",
+    "source": "product_faq",
+    "text": "# CartFlow — Product FAQ\n\n## How do I search for a product on CartFlow?\n\nYou can find products in several ways:\n- **Search bar** — Type the product name, brand, or keyword at the top of the app or website\n- **Category browse** — Tap a category (Electronics, Fashion, Home & Kitchen, etc.) from the homepage\n- **Voice search** — Tap the microphone icon in the search bar and speak your query\n- **Scan & Search** — Use the camera icon to scan a product barcode to find it on CartFlow",
+    "chunk_index": 0,
+    "category": "faq"
+  },
+  {
+    "id": "product_faq_chunk_1",
+    "source": "product_faq",
+    "text": "Use **filters** to narrow results by price, brand, rating, discount, delivery speed, and more.\n\n---\n\n## How do I know if a product is genuine?",
+    "chunk_index": 1,
+    "category": "faq"
+  },
+  {
+    "id": "product_faq_chunk_2",
+    "source": "product_faq",
+    "text": "---\n\n## How do I know if a product is genuine?\n\nCartFlow has a strict seller verification process. Signs of a genuine product:\n- **CartFlow Assured** badge — Products sold directly by CartFlow or its verified warehouse partners; all items quality-checked before dispatch\n- **Brand Authorised Seller** tag — Seller is an official distributor of that brand\n- **Manufacturer Warranty** label — Products covered by the brand's Indian warranty",
+    "chunk_index": 2,
+    "category": "faq"
+  },
+  {
+    "id": "product_faq_chunk_3",
+    "source": "product_faq",
+    "text": "For electronics (phones, laptops), look for:\n- ISI or BIS certification mark (for Indian safety standards)\n- MRP label in INR\n- India warranty card included in the box\n\nIf you receive a product you suspect is counterfeit, report it immediately via **My Orders > Report a Problem**. CartFlow takes counterfeiting seriously and will investigate.\n\n---\n\n## What does \"CartFlow Assured\" mean?",
+    "chunk_index": 3,
+    "category": "faq"
+  },
+  {
+    "id": "product_faq_chunk_4",
+    "source": "product_faq",
+    "text": "---\n\n## What does \"CartFlow Assured\" mean?\n\n**CartFlow Assured** products are:\n- Stored in CartFlow's own fulfilment centres (not third-party seller warehouses)\n- Quality-checked before dispatch\n- Eligible for faster delivery (often next-day or 2-day)\n- Covered by CartFlow's return policy directly (no dependency on third-party seller)\n\nAssured products are the most reliable choice, especially for high-value purchases.\n\n---\n\n## Can I check product availability at my pin code before ordering?",
+    "chunk_index": 4,
+    "category": "faq"
+  },
+  {
+    "id": "product_faq_chunk_5",
+    "source": "product_faq",
+    "text": "---\n\n## Can I check product availability at my pin code before ordering?\n\nYes. On any product page:\n1. Enter your PIN code in the **Check Delivery** box\n2. CartFlow will show whether the product is deliverable to your location\n3. You will also see the estimated delivery date and available delivery options (standard, express, same-day)\n\nIf a product is not deliverable to your pin code, you can click **Notify Me** to receive an alert when it becomes available.\n\n---",
+    "chunk_index": 5,
+    "category": "faq"
+  },
+  {
+    "id": "product_faq_chunk_6",
+    "source": "product_faq",
+    "text": "---\n\n## How do I read product ratings and reviews?\n\nEvery product on CartFlow has a rating (out of 5) and customer reviews. To read them:\n- Scroll down on the product page to the **Ratings & Reviews** section\n- Filter reviews by star rating, with or without photos, verified purchases only\n- Look for the **Verified Purchase** badge — this confirms the reviewer actually bought the product on CartFlow",
+    "chunk_index": 6,
+    "category": "faq"
+  },
+  {
+    "id": "product_faq_chunk_7",
+    "source": "product_faq",
+    "text": "CartFlow does not allow sellers to delete or modify reviews. Reviews from fake or incentivised purchases are removed by our moderation system.\n\n---\n\n## The product I want is out of stock. What can I do?",
+    "chunk_index": 7,
+    "category": "faq"
+  },
+  {
+    "id": "product_faq_chunk_8",
+    "source": "product_faq",
+    "text": "---\n\n## The product I want is out of stock. What can I do?\n\nIf a product shows **Out of Stock**:\n1. Click **Notify Me** — you will receive a push notification + SMS when it is back in stock\n2. Check similar products — CartFlow shows alternatives from other sellers below the out-of-stock product\n3. Check back during sale events — many brands restock specifically for CartFlow sales (Big Billion Days, Great Indian Festival, etc.)\n\n---",
+    "chunk_index": 8,
+    "category": "faq"
+  },
+  {
+    "id": "product_faq_chunk_9",
+    "source": "product_faq",
+    "text": "---\n\n## What is the difference between different sellers for the same product?",
+    "chunk_index": 9,
+    "category": "faq"
+  },
+  {
+    "id": "product_faq_chunk_10",
+    "source": "product_faq",
+    "text": "Multiple sellers may list the same product on CartFlow at different prices. Key differences:\n- **Price** — Sellers set their own prices; compare them before buying\n- **Delivery time** — Warehouse location affects shipping speed; CartFlow Assured is typically fastest\n- **Seller rating** — Shown as a percentage; higher is better\n- **Return policy** — Some sellers have stricter conditions; check the product page for seller-specific policy",
+    "chunk_index": 10,
+    "category": "faq"
+  },
+  {
+    "id": "product_faq_chunk_11",
+    "source": "product_faq",
+    "text": "Clicking **See all sellers** on a product page shows all available options side by side.\n\n---\n\n## How do I compare products before buying?\n\nOn the CartFlow app and website:\n1. Long-press (app) or hover (website) on a product card\n2. Select **Add to Compare**\n3. Add up to 4 products in the same category\n4. Click **Compare Now** — a side-by-side table of specifications, prices, ratings, and delivery times is shown\n\n---\n\n## Does CartFlow sell second-hand or refurbished products?",
+    "chunk_index": 11,
+    "category": "faq"
+  },
+  {
+    "id": "product_faq_chunk_12",
+    "source": "product_faq",
+    "text": "---\n\n## Does CartFlow sell second-hand or refurbished products?\n\nYes. CartFlow has a separate **Refurbished** section under Electronics. All refurbished products:\n- Are graded (Grade A = near-new, Grade B = minor cosmetic marks, Grade C = visible wear)\n- Come with a **6-month CartFlow warranty**\n- Are tested for full functionality before listing\n- Are priced significantly lower than new equivalents\n\nRefurbished products have a 7-day return window for any functional issues.\n\n---",
+    "chunk_index": 12,
+    "category": "faq"
+  },
+  {
+    "id": "product_faq_chunk_13",
+    "source": "product_faq",
+    "text": "Refurbished products have a 7-day return window for any functional issues.\n\n---\n\n## I received a product different from what was shown online. What do I do?\n\nRaise a **Wrong Item Delivered** return request immediately:\n1. Go to **My Orders > Select Order > Return / Exchange**\n2. Choose **Wrong Item Delivered** as the reason\n3. Upload a clear photo of the product you received\n4. Submit — CartFlow will approve the return within 24 hours and schedule a free pickup",
+    "chunk_index": 13,
+    "category": "faq"
+  },
+  {
+    "id": "product_faq_chunk_14",
+    "source": "product_faq",
+    "text": "CartFlow will send you the correct product as a replacement, or issue a full refund if the item is no longer available.",
+    "chunk_index": 14,
+    "category": "faq"
+  },
+  {
+    "id": "refund_policy_chunk_0",
+    "source": "refund_policy",
+    "text": "# CartFlow — Refund Policy\n\n## Overview\n\nOnce CartFlow approves your return or cancellation, we process your refund as quickly as possible. The refund goes back to your original payment method — UPI, bank account, credit/debit card, or CartFlow Wallet — depending on how you paid.\n\n---\n\n## Refund Timeline",
+    "chunk_index": 0,
+    "category": "policy"
+  },
+  {
+    "id": "refund_policy_chunk_1",
+    "source": "refund_policy",
+    "text": "---\n\n## Refund Timeline\n\n| Payment Method | Refund Timeline |\n|---|---|\n| UPI (GPay, PhonePe, Paytm UPI) | 1–3 business days |\n| Debit card (Rupay, Visa, Mastercard) | 3–5 business days |\n| Credit card (HDFC, ICICI, SBI, etc.) | 5–7 business days |\n| Net banking | 3–5 business days |\n| Paytm Wallet / Amazon Pay | 1–2 business days |\n| CartFlow Wallet | Instant (within minutes) |\n| Cash on Delivery (COD) | 5–7 business days to bank account |",
+    "chunk_index": 1,
+    "category": "policy"
+  },
+  {
+    "id": "refund_policy_chunk_2",
+    "source": "refund_policy",
+    "text": "These timelines begin **after CartFlow confirms your refund** — not from the day you raise the return request. Allow additional time for bank processing.\n\n---\n\n## Refund for Cash on Delivery (COD) Orders",
+    "chunk_index": 2,
+    "category": "policy"
+  },
+  {
+    "id": "refund_policy_chunk_3",
+    "source": "refund_policy",
+    "text": "---\n\n## Refund for Cash on Delivery (COD) Orders\n\nFor COD orders, CartFlow cannot refund cash to your doorstep. Instead, refunds are processed as:\n1. **CartFlow Wallet** (instant) — use for future purchases on CartFlow\n2. **Bank transfer (NEFT)** — you will be asked to provide your bank account number and IFSC code during the return process; takes 5–7 business days\n\n---\n\n## Partial Refunds",
+    "chunk_index": 3,
+    "category": "policy"
+  },
+  {
+    "id": "refund_policy_chunk_4",
+    "source": "refund_policy",
+    "text": "---\n\n## Partial Refunds\n\nIn some cases you may receive a partial refund:\n- If only part of your order is returned\n- If the product is returned with minor damage or missing accessories (deduction applied)\n- If a promotional discount was applied at the time of purchase and only part of the order is returned (discount is recomputed)\n\n---\n\n## Refund Status — How to Check\n\n1. Go to **My Orders** in the CartFlow app or website\n2. Click on the relevant order\n3. Click **View Refund Status**",
+    "chunk_index": 4,
+    "category": "policy"
+  },
+  {
+    "id": "refund_policy_chunk_5",
+    "source": "refund_policy",
+    "text": "You will see the current stage: Approved → Initiated → Processed. You will also receive SMS and email updates at each stage.\n\nAlternatively, check your bank's transaction history or UPI app — the refund will appear as a credit from \"CartFlow Payments.\"\n\n---\n\n## Refund Not Received\n\nIf you have not received your refund within the expected timeline:",
+    "chunk_index": 5,
+    "category": "policy"
+  },
+  {
+    "id": "refund_policy_chunk_6",
+    "source": "refund_policy",
+    "text": "---\n\n## Refund Not Received\n\nIf you have not received your refund within the expected timeline:\n\n1. Check your bank statement or UPI transaction history first\n2. Confirm the refund was approved in **My Orders > View Refund Status**\n3. If status shows \"Processed\" but amount not received, contact your bank\n4. If status shows \"Initiated\" but timeline has passed, contact CartFlow support with your order ID",
+    "chunk_index": 6,
+    "category": "policy"
+  },
+  {
+    "id": "refund_policy_chunk_7",
+    "source": "refund_policy",
+    "text": "Common reasons for delay:\n- Bank processing delays (weekends and public holidays add time)\n- Incorrect bank account details provided for COD refunds\n- Credit card company processing time (independent of CartFlow)\n\n---\n\n## Refund on Cancelled Orders",
+    "chunk_index": 7,
+    "category": "policy"
+  },
+  {
+    "id": "refund_policy_chunk_8",
+    "source": "refund_policy",
+    "text": "---\n\n## Refund on Cancelled Orders\n\n- **Before dispatch**: Full refund within 1–3 business days (UPI/cards)\n- **After dispatch but before delivery**: Full refund processed after the item is returned to our warehouse (7–10 business days total)\n- **After delivery**: Standard return process applies; refund after return verification\n\n---\n\n## Failed Refund Transactions",
+    "chunk_index": 8,
+    "category": "policy"
+  },
+  {
+    "id": "refund_policy_chunk_9",
+    "source": "refund_policy",
+    "text": "---\n\n## Failed Refund Transactions\n\nIf a refund fails (e.g., your bank account was closed, UPI ID changed), CartFlow will contact you via email and SMS within 48 hours to collect alternate payment details. Failing to respond within 7 days may result in the refund being converted to CartFlow Wallet credit.\n\n---\n\n## Frequently Asked Questions",
+    "chunk_index": 9,
+    "category": "policy"
+  },
+  {
+    "id": "refund_policy_chunk_10",
+    "source": "refund_policy",
+    "text": "---\n\n## Frequently Asked Questions\n\n**Can I get my refund in CartFlow Wallet instead of my original payment method?**\nYes. During the return process, select \"Refund to CartFlow Wallet\" for instant credit. Wallet credits never expire and can be used on any future CartFlow purchase.",
+    "chunk_index": 10,
+    "category": "policy"
+  },
+  {
+    "id": "refund_policy_chunk_11",
+    "source": "refund_policy",
+    "text": "**Will I get a refund if my order is lost in transit?**\nYes. If your order is confirmed lost by the carrier, CartFlow will issue a full refund or send a replacement — your choice — within 5 business days of confirming the loss.\n\n**Is shipping charge refunded?**\nOriginal shipping charge is refunded only if the return is due to CartFlow's fault (wrong item, defective product). For change-of-mind returns, shipping charges are non-refundable.",
+    "chunk_index": 11,
+    "category": "policy"
+  },
+  {
+    "id": "return_policy_chunk_0",
+    "source": "return_policy",
+    "text": "# CartFlow — Return Policy\n\n## Overview\n\nAt CartFlow, we want you to be completely satisfied with every purchase. If you are not happy with a product for any reason, our return policy makes it easy to send it back and get a resolution — whether that is a replacement, exchange, or refund.\n\n---\n\n## Return Window",
+    "chunk_index": 0,
+    "category": "policy"
+  },
+  {
+    "id": "return_policy_chunk_1",
+    "source": "return_policy",
+    "text": "---\n\n## Return Window\n\n| Category | Return Window |\n|---|---|\n| Electronics (phones, laptops, tablets) | 7 days from delivery |\n| Clothing and footwear | 15 days from delivery |\n| Home and kitchen appliances | 10 days from delivery |\n| Books and stationery | 7 days from delivery |\n| Beauty and personal care | 7 days (unopened only) |\n| Groceries and perishables | Non-returnable |\n| Customised / personalised items | Non-returnable |\n| Digital downloads and software | Non-returnable |",
+    "chunk_index": 1,
+    "category": "policy"
+  },
+  {
+    "id": "return_policy_chunk_2",
+    "source": "return_policy",
+    "text": "The return window starts from the **date of delivery**, not the date of purchase.\n\n---\n\n## Valid Reasons for Return\n\nYou can raise a return request for the following reasons:",
+    "chunk_index": 2,
+    "category": "policy"
+  },
+  {
+    "id": "return_policy_chunk_3",
+    "source": "return_policy",
+    "text": "- **Defective or damaged product** — item arrived broken, scratched, or not functioning\n- **Wrong item delivered** — you received a different product than what you ordered\n- **Missing items** — part of your order was not included in the package\n- **Not as described** — product significantly differs from the description or images on CartFlow\n- **Size or fit issue** — applicable for clothing, footwear, and accessories only",
+    "chunk_index": 3,
+    "category": "policy"
+  },
+  {
+    "id": "return_policy_chunk_4",
+    "source": "return_policy",
+    "text": "- **Size or fit issue** — applicable for clothing, footwear, and accessories only\n- **Change of mind** — applicable for eligible categories within the return window",
+    "chunk_index": 4,
+    "category": "policy"
+  },
+  {
+    "id": "return_policy_chunk_5",
+    "source": "return_policy",
+    "text": "---\n\n## Non-Returnable Items\n\nThe following items cannot be returned under any circumstances:\n- Perishable goods (food, beverages)\n- Undergarments, innerwear, and swimwear (hygiene reasons)\n- Opened beauty, skincare, or cosmetics products\n- Digital content, software licenses, and prepaid cards\n- Customised products with personalisation (name engraving, custom printing)\n- Hazardous materials\n\n---\n\n## Condition of Return",
+    "chunk_index": 5,
+    "category": "policy"
+  },
+  {
+    "id": "return_policy_chunk_6",
+    "source": "return_policy",
+    "text": "---\n\n## Condition of Return\n\nProducts must be returned in the **original condition**:\n- Original packaging intact (box, tags, accessories, manuals)\n- For electronics: IMEI sticker, warranty card, and all accessories included\n- For clothing: tags attached, unwashed, unworn\n- Proof of purchase (CartFlow order ID) must be provided\n\nItems returned in used, damaged, or incomplete condition may be rejected and sent back to you without a refund.\n\n---\n\n## How to Raise a Return Request",
+    "chunk_index": 6,
+    "category": "policy"
+  },
+  {
+    "id": "return_policy_chunk_7",
+    "source": "return_policy",
+    "text": "---\n\n## How to Raise a Return Request\n\n1. Log in to CartFlow and go to **My Orders**\n2. Select the order and click **Return / Exchange**\n3. Choose your reason from the dropdown\n4. Upload a photo of the product (required for defective/wrong item claims)\n5. Select your preferred resolution: Replacement, Exchange, or Refund\n6. Submit — you will receive a confirmation within 24 hours",
+    "chunk_index": 7,
+    "category": "policy"
+  },
+  {
+    "id": "return_policy_chunk_8",
+    "source": "return_policy",
+    "text": "Once approved, a pickup will be scheduled within **2 business days**. The delivery agent will collect the item from your doorstep. No need to visit any courier office.\n\n---\n\n## Return Pickup\n\nCartFlow arranges free reverse pickup for all valid return requests. You do not pay any return shipping charges. The pickup agent will hand you a return receipt — keep this for your records.",
+    "chunk_index": 8,
+    "category": "policy"
+  },
+  {
+    "id": "return_policy_chunk_9",
+    "source": "return_policy",
+    "text": "If your pin code is not serviceable for reverse pickup, you may be asked to self-ship the item to our nearest warehouse. In that case, CartFlow will reimburse your shipping cost (up to ₹150) after the return is verified.\n\n---\n\n## Return Verification\n\nAfter your item is received at our warehouse, our quality team verifies it within **2 business days**. Once verified:\n- If approved: refund or replacement is processed\n- If rejected: the item is shipped back to you with a detailed reason\n\n---",
+    "chunk_index": 9,
+    "category": "policy"
+  },
+  {
+    "id": "return_policy_chunk_10",
+    "source": "return_policy",
+    "text": "---\n\n## Frequently Asked Questions\n\n**Can I return part of a multi-item order?**\nYes. You can raise separate return requests for individual items within the same order.\n\n**What if my return pickup fails?**\nThe carrier will attempt pickup twice. If both fail, the return request is cancelled. You can raise a new request.\n\n**Can I exchange for a different size or colour?**\nYes, for clothing and footwear. Select \"Exchange\" when raising your return request and choose your preferred size or colour.",
+    "chunk_index": 10,
+    "category": "policy"
+  },
+  {
+    "id": "shipping_policy_chunk_0",
+    "source": "shipping_policy",
+    "text": "# CartFlow — Shipping Policy\n\n## Overview\n\nCartFlow ships to all major cities, towns, and pin codes across India. We partner with trusted logistics providers including Delhivery, BlueDart, Ekart Logistics, Ecom Express, and India Post to ensure your orders reach you safely and on time.\n\n---\n\n## Shipping Charges",
+    "chunk_index": 0,
+    "category": "policy"
+  },
+  {
+    "id": "shipping_policy_chunk_1",
+    "source": "shipping_policy",
+    "text": "---\n\n## Shipping Charges\n\n| Order Value | Shipping Charge |\n|---|---|\n| Below ₹499 | ₹49 flat fee |\n| ₹499 and above | FREE standard delivery |\n| Express delivery (any order) | ₹99 additional |\n| Same-day delivery (select cities) | ₹149 additional |\n\nSame-day delivery is currently available in Mumbai, Delhi NCR, Bengaluru, Hyderabad, Chennai, Pune, and Ahmedabad for orders placed before 12:00 PM IST.\n\n---\n\n## Estimated Delivery Timelines",
+    "chunk_index": 1,
+    "category": "policy"
+  },
+  {
+    "id": "shipping_policy_chunk_2",
+    "source": "shipping_policy",
+    "text": "---\n\n## Estimated Delivery Timelines\n\n| Delivery Type | Timeline |\n|---|---|\n| Metro cities (Mumbai, Delhi, Bengaluru, etc.) | 1–3 business days |\n| Tier-2 cities (Jaipur, Lucknow, Indore, etc.) | 3–5 business days |\n| Tier-3 cities and remote towns | 5–8 business days |\n| Rural and remote pin codes | 7–12 business days |\n| Express delivery | Next business day (metro only) |",
+    "chunk_index": 2,
+    "category": "policy"
+  },
+  {
+    "id": "shipping_policy_chunk_3",
+    "source": "shipping_policy",
+    "text": "Business days are Monday to Saturday, excluding national public holidays. Orders placed on Sundays or public holidays are processed the next working day.\n\n---\n\n## Order Processing Time\n\nAll orders are verified and dispatched within **1 business day** of payment confirmation. During sale events (Big Billion Days, festive sales), processing may take up to **2 business days** due to high order volumes.",
+    "chunk_index": 3,
+    "category": "policy"
+  },
+  {
+    "id": "shipping_policy_chunk_4",
+    "source": "shipping_policy",
+    "text": "You will receive an SMS and email confirmation with your tracking number once your order is dispatched. Tracking is available through the CartFlow app, website, or directly on the carrier's tracking portal.\n\n---\n\n## Tracking Your Order\n\nTo track your shipment:\n1. Log in to your CartFlow account\n2. Go to **My Orders**\n3. Click on the order you want to track\n4. Click **Track Shipment** — this shows real-time carrier updates",
+    "chunk_index": 4,
+    "category": "policy"
+  },
+  {
+    "id": "shipping_policy_chunk_5",
+    "source": "shipping_policy",
+    "text": "You can also enter your tracking number directly on Delhivery's website (delhivery.com), BlueDart's portal (bluedart.com), or the respective carrier's site.\n\n---\n\n## Multiple Items in One Order\n\nIf you order multiple items, they may be shipped in separate packages from different warehouses. Each package will have its own tracking number. You will receive a separate tracking update for each package. All items in your order are covered under the same delivery timeline promise.\n\n---",
+    "chunk_index": 5,
+    "category": "policy"
+  },
+  {
+    "id": "shipping_policy_chunk_6",
+    "source": "shipping_policy",
+    "text": "---\n\n## Shipping to Remote or Difficult Areas\n\nCertain pin codes in hilly regions (Himachal Pradesh, Uttarakhand, Northeastern states) and islands (Andaman & Nicobar, Lakshadweep) may have extended delivery timelines of 10–15 business days. Shipping charges for these areas may differ and will be displayed clearly at checkout before you place your order.\n\n---\n\n## Failed Delivery Attempts",
+    "chunk_index": 6,
+    "category": "policy"
+  },
+  {
+    "id": "shipping_policy_chunk_7",
+    "source": "shipping_policy",
+    "text": "---\n\n## Failed Delivery Attempts\n\nIf the delivery agent is unable to reach you:\n- A delivery attempt notification is sent via SMS\n- The carrier makes up to **3 delivery attempts**\n- After 3 failed attempts, the package is returned to our warehouse\n- You will receive a full refund (including original shipping charges) within 5–7 business days\n\nTo avoid failed deliveries, ensure your address and phone number are correct before placing your order.\n\n---\n\n## Address Changes After Placing an Order",
+    "chunk_index": 7,
+    "category": "policy"
+  },
+  {
+    "id": "shipping_policy_chunk_8",
+    "source": "shipping_policy",
+    "text": "---\n\n## Address Changes After Placing an Order\n\nAddress changes can only be requested **before the order is dispatched**. Once dispatched, we cannot redirect the shipment. To change your address, contact CartFlow support immediately via chat or call 1800-XXX-XXXX (toll-free).\n\n---\n\n## Damaged in Transit",
+    "chunk_index": 8,
+    "category": "policy"
+  },
+  {
+    "id": "shipping_policy_chunk_9",
+    "source": "shipping_policy",
+    "text": "---\n\n## Damaged in Transit\n\nIf your package appears tampered with or damaged upon arrival, do not accept the delivery. Raise a complaint immediately through the CartFlow app or call our support line. CartFlow will arrange a replacement or full refund for items damaged in transit at no cost to you.",
+    "chunk_index": 9,
+    "category": "policy"
+  }
+]

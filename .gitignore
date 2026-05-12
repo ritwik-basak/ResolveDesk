@@ -1,0 +1,119 @@
+# ============================================================
+# ResolveDesk — Git Ignore File
+# ============================================================
+#
+# WHAT IS THIS FILE?
+#   Git tracks every file in your project by default.
+#   This file tells Git: "ignore these files — don't track them."
+#
+# WHY DO WE NEED IT?
+#   1. SECRETS: .env contains API keys. If pushed to GitHub,
+#      anyone can see and steal them.
+#   2. SIZE: node_modules/ and venv/ are huge folders with
+#      thousands of files. Each developer generates their own.
+#   3. GENERATED FILES: __pycache__, .pyc, dist/ are created
+#      automatically — they shouldn't be in version control.
+# ============================================================
+
+
+# -------------------------------------------------------
+# SECRETS — Most important rule: never commit these!
+# -------------------------------------------------------
+.env
+.env.local
+.env.production
+*.pem
+*.key
+
+
+# -------------------------------------------------------
+# PYTHON
+# -------------------------------------------------------
+
+# Virtual environment — each developer creates their own
+venv/
+env/
+.venv/
+ENV/
+
+# Python bytecode — auto-generated when Python runs your files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyc
+
+# Python packaging artifacts
+*.egg-info/
+*.egg
+dist/
+build/
+.eggs/
+
+# pytest cache
+.pytest_cache/
+.coverage
+htmlcov/
+
+
+# -------------------------------------------------------
+# AI / MACHINE LEARNING
+# -------------------------------------------------------
+
+# Pickle files — we'll save the BM25 index as a .pkl file locally
+# but it gets regenerated from the knowledge base, so no need to commit
+*.pkl
+
+# HuggingFace model weights — downloaded automatically, very large
+.cache/
+huggingface/
+models/
+
+# Sentence Transformers cache
+sentence_transformers/
+
+
+# -------------------------------------------------------
+# NODE / FRONTEND
+# -------------------------------------------------------
+
+# npm/yarn packages — each developer installs their own with npm install
+node_modules/
+
+# Vite build output — generated when you run npm run build
+frontend/dist/
+frontend/.env
+frontend/.env.local
+
+# npm logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+
+# -------------------------------------------------------
+# IDEs & EDITORS
+# -------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-workspace
+*.sublime-project
+
+
+# -------------------------------------------------------
+# OPERATING SYSTEM
+# -------------------------------------------------------
+.DS_Store           # macOS folder metadata
+Thumbs.db           # Windows thumbnail cache
+desktop.ini         # Windows folder settings
+ehthumbs.db
+
+
+# -------------------------------------------------------
+# LOGS & TEMPORARY FILES
+# -------------------------------------------------------
+*.log
+logs/
+tmp/
+temp/
