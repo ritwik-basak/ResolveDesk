@@ -88,8 +88,6 @@ ormsgpack==1.12.2
 packaging==24.2
 pillow==12.2.0
 pinecone==7.3.0
-pinecone-client==5.0.1
-pinecone-plugin-assistant==1.8.0
 pinecone-plugin-interface==0.0.7
 platformdirs==4.9.6
 postgrest==0.18.0
