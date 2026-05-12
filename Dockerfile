@@ -25,6 +25,10 @@ RUN pip install --no-cache-dir \
 RUN pip install --no-cache-dir -r requirements.txt \
     --extra-index-url https://download.pytorch.org/whl/cpu
 
+# pinecone>=7.0 crashes if pinecone-plugin-inference is installed (transitively
+# pulled in by older deps). Remove it explicitly after all installs.
+RUN pip uninstall -y pinecone-plugin-inference 2>/dev/null || true
+
 
 # =============================================================================
 # Stage 2 — Runtime
