@@ -1,7 +1,7 @@
 import os
 from datetime import datetime, timezone
 
-import psycopg2
+import psycopg
 from dotenv import load_dotenv
 from supabase import Client, create_client
 
@@ -23,8 +23,8 @@ supabase: Client = create_client(_supabase_url, _supabase_key)
 
 
 def _get_pg_connection():
-    """Raw psycopg2 connection — only used for CREATE TABLE in create_tables()."""
-    return psycopg2.connect(_db_url)
+    """Raw psycopg connection — only used for CREATE TABLE in create_tables()."""
+    return psycopg.connect(_db_url, prepare_threshold=0)
 
 
 # =============================================================================
